@@ -1,46 +1,11 @@
-import java.util.Scanner;
-
 public class job3 {
-
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter the first number: ");
-        double num1 = scanner.nextDouble();
-
-        System.out.print("Enter an operator (+, -, *, /): ");
-        char operator = scanner.next().charAt(0);
-
-        System.out.print("Enter the second number: ");
-        double num2 = scanner.nextDouble();
-
-        double result;
-
-        switch (operator) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                if (num2 != 0) {
-                    result = num1 / num2;
-                } else {
-                    System.out.println("Error: Cannot divide by zero.");
-                    return;
-                }
-                break;
-            default:
-                System.out.println("Error: Invalid operator.");
-                return;
+        int sum = 0;
+        
+        for (int i = 1; i <= 10; i++) {
+            sum += i;
         }
-
-        System.out.println("Result: " + result);
-
-        scanner.close();
+        
+        System.out.println("The sum of numbers from 1 to 10 is: " + sum);
     }
 }
