@@ -1,4 +1,4 @@
-public class FactorialCalculator {
+public class job2 {
 
     public static void main(String[] args) {
         int number = 5; // Change this number to calculate the factorial for a different value
